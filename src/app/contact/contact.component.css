@@ -1,0 +1,18 @@
+.line{
+    width: 80px;
+    height: 4px;
+    background-color: #1A252F;
+}
+.inputs{
+    border: 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, .175);
+    padding: 20px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.maingreen{
+    background-color: #1ABC9C;
+}
+.my-margin{
+    margin-left: 12%;
+}

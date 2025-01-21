@@ -1,0 +1,37 @@
+
+<section class="p-5">
+    <div class="container">
+        <div class="head">
+            <h1 class="text-uppercase py-3 fw-bolder text-center">Portfolio component</h1>
+        <div class="lines d-flex align-items-center justify-content-center mb-3">
+            <div class="line me-3"></div>
+            <i class="fa-solid fa-star"></i>
+            <div class="line ms-3"></div>
+        </div>
+        </div>
+        <div class="gallery p-3">
+            <div class="container row g-4 m-auto">
+               @for (img of imgs; track $index) {
+                <div class="inner col-md-4" (click)="source(img);detail()">
+                    <div class="innn position-relative position-relative" id="photo">
+                        <img src={{imgs[$index]}} class="w-100 rounded-2" alt="cake">
+                        <div class="layer position-absolute top-0 start-0 end-0 bottom-0 maingreen text-white d-flex justify-content-center align-items-center rounded-2">
+                            <i class="fa-solid fa-plus fa-2xl fw-bold display-1"></i>
+                        </div>
+                    </div>
+                </div>
+               }
+            </div>
+        </div>
+    </div>
+</section>
+@if (condition) {
+    <div class="show position-fixed top-0 start-0 end-0 bottom-0 d-flex justify-content-center align-items-center" (click)="close()" id="show">
+        <div class="container ">
+            <div class="container d-flex justify-content-center align-items-center">
+                <img src={{currentImg}} alt="" class="w-50 rounded-2" (click)="avoid($event)">
+            </div>
+        </div>
+    </div>
+}
+

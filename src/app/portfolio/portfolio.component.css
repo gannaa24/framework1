@@ -1,0 +1,18 @@
+.line{
+    width: 80px;
+    height: 4px;
+    background-color: #1A252F;
+}
+.maingreen{
+    background-color: #1ABC9C;
+}
+.layer{
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+.innn:hover .layer{
+    opacity: 0.9;
+}
+.show{
+    background-color: rgba(0,0,0,0.5);
+}
