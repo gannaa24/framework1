@@ -16,3 +16,6 @@
 .my-margin{
     margin-left: 12%;
 }
+input:focus{
+    outline: none;
+}
